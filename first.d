@@ -161,4 +161,57 @@ void main(){
     favNums.remove("AZero");
   }
   writeln(favNums);
- }
+  char[] arrName;
+  string fname=strip(readln(arrName));
+  writeln(strip(fname));
+  
+  int age=12;
+  if((age>=5)&&(age<=6)){
+    writeln("kindergarten");
+  }
+  else if((age>=7)&& (age<=13)){
+    writeln("go middle school");
+  }
+  else {
+    writeln("adult/teen");
+  }
+  bool canVote = (age>=18)? true : false;
+  string lang="franvce";
+  switch(lang){
+    case "asds":case "ada" :
+      writeln("hola soy dora");
+      break;
+    case "in":
+      goto case;
+    default:
+      writeln("add");
+    case 7: ..  case:13 
+  }
+  for(int i=0;i<5;i++){
+    writeln(i);    
+  }
+  int [] a6=[1,1,1,1];
+  foreach(x;a6){
+    writeln(x);
+  }
+  foreach(x;3..10){
+    writeln(x);
+  }
+  double [string] aa=["A":1,"B":2];
+  foreach(k,v;aa){
+    writeln(k," ",v);
+  }
+  foreach(x;aa.byKeyValue){
+    writeln("%s : %s",x.key,x.value);
+  }
+  int[] ff=[1,1,1,1,2,3,36,67];
+  foreach(ref x;ff){x*=2;}
+  int w=0;
+  while(w<20){
+    if(w%2==0){
+      writeln(w);
+      w++;
+      continue;
+    }
+  }
+  
