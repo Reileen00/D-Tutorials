@@ -1,75 +1,78 @@
-    ![Alternative text for the image](tictactoe/Screenshot from 2025-05-27 21-12-17.png)
-**Tic-Tac-Toe in D**
-This is a simple console-based Tic-Tac-Toe game written in the D programming language. The game allows two players to take turns entering their moves, and checks for win conditions after every turn.
+# 🎮 Tic-Tac-Toe in D
 
-🕹️ How to Play
-The game uses a 3×3 grid.
+A simple console-based Tic-Tac-Toe game written in the **D programming language**, featuring two-player turn-based gameplay, win detection, and basic input validation.
 
-Player X and Player O take turns.
+---
 
-Players enter the x (column) and y (row) coordinates (0, 1, or 2) to make a move.
+## 🖼️ Screenshot
 
-If a cell is already occupied or the input is invalid, the player is prompted again.
+Below is a sample gameplay screenshot:
 
-The game ends when one player wins by lining up three of their symbols or the board is full (note: draw detection is not implemented yet).
+![Tic Tac Toe Screenshot](Screenshot%20from%202025-05-27%2021-12-17.png)
 
-🚀 Getting Started
-Requirements
-D compiler (e.g., dmd)
 
-Running the Game
-bash
-Copy
-Edit
+## 📑 Table of Contents
+
+- [How to Play](#how-to-play)
+- [Requirements](#requirements)
+- [Build and Run](#build-and-run)
+- [Game Menu](#game-menu)
+- [Controls](#controls)
+- [Source Code](#source-code)
+- [Features](#features)
+- [Limitations](#limitations)
+- [License](#license)
+
+---
+
+## 🕹️ How to Play
+
+- The game is played on a 3x3 grid.
+- Two players (X and O) take turns marking spaces in the grid.
+- The first player to get 3 of their marks in a row (horizontally, vertically, or diagonally) wins.
+- If a move is invalid (non-digit, out-of-range, or the cell is already occupied), the player is prompted again.
+- *Note: Draw detection is not implemented.*
+
+---
+
+## 🛠 Requirements
+
+- D Language compiler (`dmd`)  
+  [Install D](https://dlang.org/download.html)
+
+---
+
+## 🚀 Build and Run
+
+```bash
 dmd tictactoe.d -of=tictactoe
 ./tictactoe
-Menu
-When you run the program, you'll be presented with a simple menu:
+```
+## 📋 Game Menu
 
-scss
-Copy
-Edit
+When the program starts, you'll see:
+```
 Hello!
 (1) Play
 (2) Exit
-:_ 
-Enter 1 or play to start.
+:_
 
-Enter 2 or anything else to exit.
+- Type `1`, `play`, or `p` to start the game.
+- Type `2` or anything else to exit.
 
-📋 Controls
-You are prompted to enter x (column) and y (row) coordinates one at a time:
+```
 
-makefile
-Copy
-Edit
+## 🎮 Controls
+
+Players are prompted to input their move coordinates:
+
+```
 x:_ 1
 y:_ 2
-This places your symbol at position (1, 2) on the board.
+```
+This places the current player's symbol at **column 1, row 2** of the board.
 
-📦 File Structure
-tictactoe.d — Main source code file
 
-🛠️ Features
-Interactive console input
+## 📦 Source Code
 
-Turn-based play between two users
-
-Win condition checks for:
-
-Rows
-
-Columns
-
-Diagonals
-
-Input validation (non-digit and out-of-range handling)
-
-Prevents overwriting occupied cells
-
-❌ Missing Features
-Draw condition detection
-
-AI for single-player mode
-
-Input sanitization beyond basic digit checks
+The full game is implemented in D. You can find the main logic in the file `newmain.d`.
