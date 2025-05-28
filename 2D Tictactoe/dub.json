@@ -1,0 +1,16 @@
+{
+	"authors": [
+		"rillki"
+	],
+	"copyright": "Copyright © 2021, rillki",
+	"dependencies": {
+		"raylib-d": "~>5.0.1"
+	},
+	"libs": [ "raylib" ],
+	"lflags-posix" : ["-L."],
+	"lflags-osx" : ["-rpath", "@executable_path/"],
+	"lflags-linux" : ["-rpath=$$ORIGIN"],
+	"description": "D/Raylib minimal setup",
+	"license": "no license",
+	"name": "d-raylib-project-template"
+}
